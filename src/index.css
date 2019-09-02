@@ -15,3 +15,14 @@ code {
 .app {
   padding: 12px;
 }
+
+ol {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-separator {
+  color: #333;
+  margin: auto 6px;
+  user-select: none;
+}

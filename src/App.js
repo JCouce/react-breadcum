@@ -16,9 +16,15 @@ const items = [
   { to: '/blog', label: 'Blog' },
 ]
 
+const Separator = ({ children, ...props }) => (
+  <span style={{ color: 'teal' }} {...props}>
+    {children}
+  </span>
+)
+
 const App = () => (
   <div className='app'>
-    <Breadcrumb>
+    <Breadcrumb separator={<Separator>-></Separator>}>
       {items.map(({ to, label }) => (
         <Link key={to} to={to}>
           {label}
